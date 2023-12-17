@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .darkBlueBackground {
+    background-color: hsl(240, 100%, 5%);
+  }
+
+  body {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+  }
+
+  .softOrange {
+    color: hsl(35, 77%, 62%);
+  }
+
+  .softRed {
+    background-color: hsl(5, 85%, 63%);
+  }
+
+  .darkBlue {
+    color: hsl(240, 100%, 5%);
+  }
+
+  .darkGrayBlue {
+    color: hsl(236, 13%, 42%);
+  }
+
+  .offWhite {
+    color: hsl(36, 100%, 99%);
+  }
+
+  .grayishBlue {
+    color: hsl(233, 8%, 79%);
+  }
+
+  .boxShadow {
+    box-shadow: -300px -2px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}

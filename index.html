@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="/public/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body class="px-20 max-md:px-7">
+    <header class="flex justify-between items-center py-12">
+      <div>
+        <a href="">
+          <img src="/assets/images/logo.svg" alt="Logo Image" />
+        </a>
+      </div>
+      <div>
+        <nav class="flex items-center">
+          <ul
+            class="flex max-md:hidden max-md:absolute max-md:flex-col max-md:top-0 max-md:bottom-0 max-md:left-[40%] max-md:right-0 max-md:p-4 max-md:z-10 max-md:bg-white max-md:boxShadow"
+          >
+            <div class="flex justify-end">
+              <button class="hidden max-md:block max-md:my-10" id="closeButton">
+                <img
+                  src="/assets/images/icon-menu-close.svg"
+                  alt="Menu Close"
+                />
+              </button>
+            </div>
+
+            <li class="max-md:py-2">
+              <a href="" class="py-0 px-3 darkGrayBlue max-md:darkBlue">Home</a>
+            </li>
+            <li class="max-md:py-2">
+              <a href="" class="py-0 px-3 darkGrayBlue max-md:darkBlue">New</a>
+            </li>
+            <li class="max-md:py-2">
+              <a href="" class="py-0 px-3 darkGrayBlue max-md:darkBlue"
+                >Popular</a
+              >
+            </li>
+            <li class="max-md:py-2">
+              <a href="" class="py-0 px-3 darkGrayBlue max-md:darkBlue"
+                >Trending</a
+              >
+            </li>
+            <li class="max-md:py-2">
+              <a href="" class="py-0 px-3 darkGrayBlue max-md:darkBlue"
+                >Categories</a
+              >
+            </li>
+          </ul>
+
+          <button class="hidden max-md:block" id="openButton">
+            <img src="/assets/images/icon-menu.svg" alt="Menu Open" />
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="grid grid-cols-3 grid-rows-3 gap-7 h-full max-md:flex max-md:flex-col"
+    >
+      <div class="col-span-2 row-span-2">
+        <div class="mb-7">
+          <img
+            src="/assets/images/image-web-3-desktop.jpg"
+            alt="Web 3 Desktop Image"
+            class="max-md:hidden"
+          />
+          <img
+            src="/assets/images/image-web-3-mobile.jpg"
+            alt="Web 3 Desktop Image"
+            class="hidden max-md:block"
+          />
+        </div>
+        <div class="flex gap-12 max-md:flex-col">
+          <div class="w-3/6 max-md:w-full">
+            <h1 class="font-bold text-6xl darkBlue">
+              The Bright Future of Web 3.0?
+            </h1>
+          </div>
+          <div class="flex flex-col justify-between w-3/6 max-md:w-full">
+            <p class="darkGrayBlue text-base max-md:mb-6 max-md:w-full">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+
+            <button
+              class="uppercase softRed py-3 tracking-widest text-white font-bold w-3/6"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="darkBlueBackground col-start-3 col-end-4 row-span-2 py-8 px-5"
+      >
+        <div>
+          <h2 class="softOrange font-bold text-4xl mb-7">New</h2>
+          <div class="border-b mb-4">
+            <h3 class="font-bold text-lg offWhite">
+              Hydrogen VS Electric Cars
+            </h3>
+            <p class="darkGrayBlue mt-2 mb-5">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="border-b my-7">
+            <h3 class="font-bold text-lg offWhite">
+              The Downsides of AI Artistry
+            </h3>
+            <p class="darkGrayBlue mt-2 mb-7">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="my-7">
+            <h3 class="font-bold text-lg offWhite">Is VC Funding Drying Up?</h3>
+            <p class="darkGrayBlue mt-2 mb-5">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-span-3 row-start-3 row-end-4 flex justify-between items-center max-md:flex-col max-md:gap-6 max-md:justify-center max-md:items-start"
+      >
+        <div class="flex gap-4">
+          <div class="max-md:w-[200px]">
+            <img
+              src="/assets/images/image-retro-pcs.jpg"
+              alt="Retro Image"
+              class="max-md:w-[200px]"
+            />
+          </div>
+          <div class="flex flex-col justify-between">
+            <h3 class="font-bold text-3xl grayishBlue">01</h3>
+            <h4 class="darkBlue font-bold text-lg">Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="max-md:w-[200px]">
+            <img
+              src="/assets/images/image-top-laptops.jpg"
+              alt="Laptop Image"
+              class="max-md:w-[200px]"
+            />
+          </div>
+          <div class="flex flex-col justify-between">
+            <h3 class="font-bold text-3xl grayishBlue">02</h3>
+            <h4 class="darkBlue font-bold text-lg">Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="max-md:w-[200px]">
+            <img
+              src="/assets/images/image-gaming-growth.jpg"
+              alt="Growth Image"
+            />
+          </div>
+          <div class="flex flex-col justify-between">
+            <h3 class="font-bold text-3xl grayishBlue">03</h3>
+            <h4 class="darkBlue font-bold text-lg">The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    const closeButton = document.querySelector("#closeButton");
+    const openButton = document.querySelector("#openButton");
+    const nav = document.querySelector("ul");
+
+    openButton.addEventListener("click", () => {
+      console.log("open");
+      nav.classList.add("max-md:block");
+      nav.classList.remove("max-md:hidden");
+    });
+
+    closeButton.addEventListener("click", () => {
+      console.log("close");
+      nav.classList.remove("max-md:block");
+      nav.classList.add("max-md:hidden");
+    });
+  </script>
+</html>
